@@ -1,0 +1,83 @@
+.plan-container{
+    padding:0  2rem;
+    margin-top: -4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    position: relative;
+}
+.program-header{
+    display: flex;
+    text-transform: uppercase;
+    font-weight: bold;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+}
+.plans{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+   color: white;
+}
+
+.plan{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--darkGrey);
+    padding: 1.5rem;
+    width: 15rem;
+}
+.plans>:nth-child(2){
+    background-color: var(--orange);
+    transform: scale(1.1);
+} 
+.plan>svg{
+    fill: var(--orange);
+    width: 2rem;
+    height: 2rem;
+}
+.plan>:nth-child(2){
+    font-size: 1rem;
+    font-weight: bold;
+}
+.plan>:nth-child(3){
+    font-size: 3rem;
+    font-weight: bold;
+}
+.features{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.feature{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.plans-blur-1{
+    width: 22rem;
+    height: 23rem;
+    top:6rem;
+}
+.plans-blur-2{
+    width: 32rem;
+    height: 23rem;
+    right: 0rem;
+    top: 10rem;
+}
+@media screen  and (max-width : 768px){
+    .plan-container{
+        flex-direction: column;
+    }
+    .program-header{
+        flex-direction: column;
+
+    }
+    .plans{
+        flex-direction: column;
+    }
+}
